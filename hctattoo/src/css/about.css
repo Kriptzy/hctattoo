@@ -1,0 +1,55 @@
+.about-container {
+  position: relative;
+}
+
+.about-image-container {
+  position: relative;
+}
+
+.background-about {
+  position: relative;
+  width: auto;
+  height: 500px;
+  filter: brightness(12.5%);
+  background-image: url('../img/tattoo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-title-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.about-title {
+  font-size: 64px;
+  color: white;
+  margin: 0;
+  animation: fade-in 0.8s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.about-text {
+  font-size: 28px;
+  color: black;
+  justify-content: center;
+  display:flex;
+  text-align: center;
+  margin: 100px auto;
+  width: 90%;
+  animation: fade-in 0.8s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
