@@ -1,0 +1,171 @@
+.contact-container {
+  position: relative;
+}
+
+.contact-image-container {
+  position: relative;
+}
+
+.contact-background {
+  position: relative;
+  width: auto;
+  height: 500px;
+  filter: brightness(12.5%);
+  background-image: url('../img/tattoo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 64px;
+  color: white;
+  margin: 0;
+  animation: fade-in 0.8s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  width: 90%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fade-in 0.8s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.contact-text {
+  font-size: 20px;
+  color: black;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 40px;
+}
+
+.input,
+.textarea {
+  font-family: 'Arvo', sans-serif;
+  width: 90%;
+  height: 40px;
+  margin-bottom: 12px;
+  padding: 8px;
+  border: none;
+  font-size: 14px;
+  border: 2px solid black;
+}
+
+.textarea {
+  height: 200px;
+  resize: none;
+}
+
+.button {
+  font-family: 'Arvo', sans-serif;
+  width: 40%;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.5s ease;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.button:active {
+  filter: brightness(80%);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.info-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  animation: fade-in 0.8s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.info-text {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #555;
+  animation: fade-in 0.8s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.maps {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fade-in 0.8s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.maps iframe {
+  border: 2px solid black;
+  width: 100%;
+  height: 450px;
+  margin: 20px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .form {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .form {
+    width: 90%;
+    max-width: 300px;
+  }
+}
