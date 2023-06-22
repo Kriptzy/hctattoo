@@ -1,13 +1,14 @@
 import React from 'react';
+import News1 from '../img/news/news1.png';
 
 export default function News() {
   const newsItems = [
     {
-      title: '',
-      text: '',
-      date: '',
-      imageSrc: 'https://via.placeholder.com/1',
-      altText: '',
+      title: "Inauguração do Site Oficial",
+      text: "Hoje marca o lançamento do tão esperado site oficial da Loja Hardcore Tattos & Body Piercing. Fiquem a espera por mais noticias que estão por vir.",
+      date: "22 de junho de 2023",
+      imageSrc: News1,
+      altText: "news1"
     },
     {
       title: '',
